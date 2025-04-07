@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Discussions on Hacker News & Reddit</title>
+  <link rel="stylesheet" href="css/popup.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Discussions on Hacker News & Reddit</h1>
+    </header>
+
+    <div class="status">
+      <p id="current-url">Loading current page URL...</p>
+    </div>
+
+    <div class="tabs">
+      <button id="hn-tab" class="tab-button active">Hacker News</button>
+      <button id="reddit-tab" class="tab-button">Reddit</button>
+    </div>
+
+    <div id="hn-content" class="tab-content active">
+      <div id="hn-loading" class="loading">Querying Hacker News discussions...</div>
+      <div id="hn-results" class="results"></div>
+      <div id="hn-error" class="error"></div>
+    </div>
+
+    <div id="reddit-content" class="tab-content">
+      <div id="reddit-loading" class="loading">Querying Reddit discussions...</div>
+      <div id="reddit-results" class="results"></div>
+      <div id="reddit-error" class="error"></div>
+    </div>
+
+    <footer>
+      <p>Click discussion links to open in new tabs</p>
+    </footer>
+  </div>
+
+  <script src="js/popup.js"></script>
+</body>
+</html>
